@@ -13,6 +13,10 @@ button {
     outline: none!important;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
     text-decoration: none;
     cursor: pointer;
@@ -22,7 +26,6 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,12 +34,16 @@ a:hover {
 }
 
 .bloc .container {
-    padding-left: 0;
-    padding-right: 0;
+   flex-direction: column;
+}
+
+.section__flex{
+    display:flex;
+    justify-content:space-evenly;
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 100px 0px;
 }
 
 .bloc-md {
@@ -497,6 +504,7 @@ button {
 }
 
 .form-control {
+    margin:10px 0;
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
@@ -645,10 +653,6 @@ a {
     color: #575757!important;
 }
 
-.container {
-    max-width: 1000px;
-}
-
 .hero-bloc-text {
     font-size: 38px;
 }
@@ -760,10 +764,12 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
+    display: flex;
+    justify-content: center;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
