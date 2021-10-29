@@ -327,7 +327,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: lightgray;
+    background: #FFE30F;
 }
 
 .navbar-toggle {
@@ -753,25 +753,26 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #FFCB0F;
+    background-color: #FFE30F;
 }
 
 .bgc-atomic-tangerine {
-    background-color: #FFCB0F;
+    background-color: #9A3D00;
 }
 
 .tc-white {
-    color: #FFF!important;
+    color: #FFE30F!important;
+    font-weight: bold;
 }
 
 .btn-atomic-tangerine {
-    background: #FFCB0F;
+    background:#9A3D00;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #FFCB0F!important;
-    color: #FFFFFF!important;
+    color: #9A3D00!important;
 }
 
 .ltc-white {
