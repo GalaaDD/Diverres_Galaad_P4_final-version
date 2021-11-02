@@ -7,8 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a,
-button {
+a, button {
     transition: all .3s ease-in-out;
     outline: none!important;
 }
@@ -25,14 +24,7 @@ a:hover {
 section h2{
     text-align:center;
 }
-.display-table{
-    display:table;
-    content:"";
-}
 
-.clear{
-    clear:both;
-}
 .row, .navbar-header{
     display:table;
     clear:both;
@@ -66,16 +58,7 @@ section h2{
     padding: 20px 50px;
 }
 
-.bg-center,
-.bg-l-edge,
-.bg-r-edge,
-.bg-t-edge,
-.bg-b-edge,
-.bg-tl-edge,
-.bg-bl-edge,
-.bg-tr-edge,
-.bg-br-edge,
-.bg-repeat {
+.bg-center, .bg-l-edge, .bg-r-edge, .bg-t-edge, .bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat {
     -webkit-background-size: auto!important;
     -moz-background-size: auto!important;
     -o-background-size: auto!important;
@@ -112,16 +95,14 @@ section h2{
 .d-bloc {
     color: rgba(255, 255, 255, .7);
 }
-
+.transparent-white{
+    color: rgba(255, 255, 255, .9);
+}
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
 }
 
-.d-bloc .icon-round,
-.d-bloc .icon-square,
-.d-bloc .icon-rounded,
-.d-bloc .icon-semi-rounded-a,
-.d-bloc .icon-semi-rounded-b {
+.d-bloc .icon-round, .d-bloc .icon-square, .d-bloc .icon-rounded, .d-bloc .icon-semi-rounded-a, .d-bloc .icon-semi-rounded-b {
     border-color: rgba(255, 255, 255, .9);
 }
 
@@ -129,13 +110,7 @@ section h2{
     border-color: rgba(255, 255, 255, .2);
 }
 
-.d-bloc .a-btn,
-.d-bloc .navbar a,
-.d-bloc .navbar-brand,
-.d-bloc a .icon-sm,
-.d-bloc a .icon-md,
-.d-bloc a .icon-lg,
-.d-bloc a .icon-xl,
+.d-bloc .a-btn, .d-bloc .navbar a, .d-bloc .navbar-brand, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl,
 .d-bloc h1 a,
 .d-bloc h2 a,
 .d-bloc h3 a,
@@ -217,7 +192,9 @@ section h2{
 .l-bloc .icon-square,
 .l-bloc .icon-rounded,
 .l-bloc .icon-semi-rounded-a,
-.l-bloc .icon-semi-rounded-b {
+.l-bloc .icon-semi-rounded-b 
+
+.border-color--transparent-black{
     border-color: rgba(0, 0, 0, .7);
 }
 
@@ -370,6 +347,17 @@ section h2{
     float: right;
     position: relative;
     z-index: 2;
+}
+
+@media (max-width: 400px) {
+    .bloc {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .col__flex-center{
+        display:flex;
+        justify-content: space-evenly;
+    }
 }
 
 @media (min-width: 768px) {
@@ -827,80 +815,6 @@ h4 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
-@media (max-width: 1024px) {
-    .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .bloc.full-width-bloc,
-    .bloc-tile-2.full-width-bloc .container,
-    .bloc-tile-3.full-width-bloc .container,
-    .bloc-tile-4.full-width-bloc .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
-    }
-    .nav-center.navbar .nav {
-        max-width: 100%
-    }
-    .col__flex-center{
-        display:flex;
-        justify-content:center;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    .col__flex-center{
-        display:flex;
-        justify-content:center;
-    }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    .col__flex-center{
-        display:flex;
-        justify-content:center;
-    }
-}
-
-@media (max-width: 991px) {
-    .container {
-        width: 100%;
-    }
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    .page-container,
-    #hero-bloc {
-        overflow-x: hidden;
-        position: relative;
-    }
-    .bloc-group,
-    .bloc-group .bloc {
-        display: block;
-        width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-    }
-    .col__flex-center{
-        display:flex;
-        justify-content:center;
-    }
-}
-
 @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
@@ -1043,20 +957,6 @@ h4 {
         display:flex;
         justify-content:center;
     }
-}
-
-@media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .col__flex-center{
-        display:flex;
-        justify-content: space-evenly;
-    }
-}
-
-@media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
@@ -1065,3 +965,73 @@ h4 {
         justify-content:center;
     }
 }
+    
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .navbar .nav {
+        max-width: 80%
+    }
+    .nav-center.navbar .nav {
+        max-width: 100%
+    }
+    .col__flex-center{
+        display:flex;
+        justify-content:center;
+    }
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .col__flex-center{
+        display:flex;
+        justify-content:center;
+    }
+    .bloc {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bloc.full-width-bloc,
+    .bloc-tile-2.full-width-bloc .container,
+    .bloc-tile-3.full-width-bloc .container,
+    .bloc-tile-4.full-width-bloc .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container {
+        width: 100%;
+    }
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .page-container,
+    #hero-bloc {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .bloc-group,
+    .bloc-group .bloc {
+        display: block;
+        width: 100%;
+    }
+    .bloc-fill-screen .fill-bloc-top-edge,
+    .bloc-fill-screen .fill-bloc-bottom-edge {
+        padding: 0 20px;
+    }
+    .col__flex-center{
+        display:flex;
+        justify-content:center;
+    }
+}
+   
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .col__flex-center{
+        display:flex;
+        justify-content:center;
+    }
+}
+
+
+
+
