@@ -25,37 +25,11 @@ a:hover {
     margin-right: auto;
     margin-left: auto;
 }
-.text-left {
-    text-align: left
-}
-
-.text-right {
-    text-align: right
-}
 
 .text-center {
     text-align: center  
 }
 
-.text-justify {
-    text-align: justify
-}
-
-.text-nowrap {
-    white-space: nowrap
-}
-
-.text-lowercase {
-    text-transform: lowercase
-}
-
-.text-uppercase {
-    text-transform: uppercase
-}
-
-.text-capitalize {
-    text-transform: capitalize
-}
 section h2{
     text-align:center;
 }
@@ -127,22 +101,8 @@ section h2{
     background-attachment: fixed;
 }
 
-.d-bloc {
-    color: rgba(255, 255, 255, .7);
-}
 .transparent-white{
     color: rgba(255, 255, 255, .9);
-}
-.d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
-}
-
-.d-bloc .icon-round, .d-bloc .icon-square, .d-bloc .icon-rounded, .d-bloc .icon-semi-rounded-a, .d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
-}
-
-.d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
 }
 
 .social {
@@ -566,8 +526,6 @@ p {
     font-size: 16px;
     font-weight: 700;
 }
-
-
 
 .h1 {
     font-size: 35px;
