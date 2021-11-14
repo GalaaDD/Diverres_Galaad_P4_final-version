@@ -377,7 +377,6 @@ button {
 a[data-lightbox] {
     position: relative;
     text-align: center;
-    display:block;
 }
 
 a[data-lightbox]:hover::before {
