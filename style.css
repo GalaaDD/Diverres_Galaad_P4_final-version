@@ -206,9 +206,19 @@ section h2{
         display:flex;
         justify-content: space-evenly;
     }
+
+    .row, .navbar-header{
+        display:unset;
+        clear:none;
+    }
+
 }
 
 @media (min-width: 768px) {
+    .row, .navbar-header{
+        display:unset;
+        clear:none;
+    }
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -632,6 +642,14 @@ h3 {
 }
 
 @media (max-width: 767px) {
+    .social-flex{
+        display:flex;
+        justify-content: space-around;
+    }
+    .row, .navbar-header{
+        display:unset;
+        clear:none;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -772,6 +790,7 @@ h3 {
 }
     
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
     .navbar .nav {
         max-width: 80%
     }
